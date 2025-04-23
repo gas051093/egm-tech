@@ -1,0 +1,17 @@
+.sidebar{
+    background-color: #1F2937;
+    height: 100vh;
+    &__list{
+        list-style: none;
+    }
+    &__link{
+        color: white;
+    }
+    &__li{
+        background-color: #334051;
+        height: 15%;
+    }
+    &__ico{
+        width: 30px;
+    }
+}

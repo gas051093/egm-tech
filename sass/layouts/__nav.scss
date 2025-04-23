@@ -1,0 +1,25 @@
+.nav{
+    background-color: #1F2937;
+    color: white;
+    user-select: none;
+    &__img{
+        width: 40px;
+    }
+    &__button{
+        width: 150px;
+        color: white;
+        background-color: #1F2937;
+        border: 0px;
+    }
+    &__ico{
+        width: 25px;
+    }
+    &__link{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        &:hover{
+            color: #cb0000;
+        }
+    }
+}

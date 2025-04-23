@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./js/act_fecha.js"></script>
+    <title>Sistema EGM Tech - Panel Técnico</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <header class="nav row fixed-top">
+            <section class="row justify-content-space-between align-items-center py-1 px-5 m-0">
+                <p id="nav_day" class="nav__day col-4 text-start m-0">[error]fecha automatizada por js</p>
+                <div class="col-4 text-center d-flex justify-content-center align-items-center m-0">
+                    <img class="nav__img m-0 me-2" src="assets/img/logo_blanco.png" alt="logo empresa EGM">
+                    <p class="nav__title m-0">EGM TECH - Panel Técnico</p>
+                </div>
+                <div class="col-4 m-0 text-end">
+                    <a id="nav_link" class="nav__link"><img src="assets/ico/lock.svg" class="nav__ico me-2" alt="">Cerrar sesion</a>
+                </div>
+            </section>
+        </header>
+        <main class="row">
+            <nav class="sidebar col-2 p-0">
+                <div class="row m-0 mt-5 p-0">
+                    <ul class="sidebar__list row gap-2 p-0 m-0">
+                        <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/home.svg" class="sidebar__ico me-2" alt="">Dashboard</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/order.svg" class="sidebar__ico me-2" alt="">Odenes</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/cliente.svg" class="sidebar__ico me-2" alt="">Clientes</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/factura.svg" class="sidebar__ico me-2" alt="">Facturación</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/producto.svg" class="sidebar__ico me-2" alt="">Productos</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/caja.svg" class="sidebar__ico me-2" alt="">Caja</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/config.svg" class="sidebar__ico me-2" alt="">Configuración</a> 
+                        </li>
+                         <li class="sidebar__li align-content-center">
+                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/lock.svg" class="sidebar__ico me-2" alt="">Cerrar sesión</a> 
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </main>
+
+        <footer class="row">
+            <section class="foot row p-0 py-3 px-5 m-0 align-items-center fixed-bottom">
+                <div class="col-4 p-0 ps-5">
+                    <img class="foot__logo" src="assets/img/logo_blanco.png" alt="logo empresa EGM">
+                </div>
+                <p class="text-center col-4 p-0 m-0 ">  Sistema EGM Tech - Panel Técnico | © 2025 Serviel Solutions <br> Desarrollado por Elio G. Magrassi · v1.0.0 <br>🖥️ Uso interno - No distribuir sin autorización</p>
+                <div class="col-4 p-0 pe-5 text-end">
+                    <a class="foot__link"><img src="assets/ico/contacto.svg" class="foot__ico me-2" alt="">Contactenos</a>
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</body>
+</html>
