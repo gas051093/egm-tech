@@ -4,18 +4,33 @@
   font-family: "Roboto", sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #003459;
+  border-radius: 4px;
+}
+
+.bg_page {
+  background-color: #E4EDEB;
+}
+
 .nav {
-  background-color: #1F2937;
-  color: white;
+  background-color: #003459;
+  color: #ffffff;
   user-select: none;
+  box-shadow: 5px 0px 15px black;
 }
 .nav__img {
   width: 40px;
 }
 .nav__button {
   width: 150px;
-  color: white;
-  background-color: #1F2937;
+  color: #ffffff;
+  background-color: #ffffff;
   border: 0px;
 }
 .nav__ico {
@@ -23,60 +38,54 @@
 }
 .nav__link {
   text-decoration: none;
-  color: white;
+  color: #ffffff;
   cursor: pointer;
 }
 .nav__link:hover {
-  color: #cb0000;
+  color: #4b555f;
 }
 
 .sidebar {
-  background-color: #1F2937;
+  background-color: #00171F;
   height: 100vh;
-  width: 180px;
   font-size: 0.8em;
+  border-radius: 0px 20px 0px 0px;
+}
+.sidebar__scroll {
+  overflow-y: auto;
+  max-height: 50vh;
+}
+.sidebar__logo {
+  width: 80px;
 }
 .sidebar__item {
   all: unset;
   width: 100%;
-  height: 30px;
   text-align: start;
-  color: white;
-  background-color: #465a75;
+  color: #ffffff;
+  background-color: #2e2e2e;
 }
 .sidebar__item:hover {
   border-left: 5px solid green;
-  background-color: #272d35;
+  background-color: #4b555f;
   transition: background-color 600ms, border-left 0ms;
 }
 .sidebar__submenu {
   display: none;
+  color: black;
+  background-color: #082832;
 }
 .sidebar__menu {
   all: unset;
   width: 100%;
   text-align: start;
-  color: white;
+  color: #ffffff;
 }
 .sidebar__ico {
   width: 30px;
 }
-
-.foot {
-  background-color: #1F2937;
-  color: white;
-  user-select: none;
-}
-.foot__logo {
-  width: 80px;
-}
-.foot__ico {
-  width: 30px;
-}
-.foot__link {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
+.sidebar__foot {
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=style.css.map */

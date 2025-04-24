@@ -1,14 +1,15 @@
 .nav{
-    background-color: #1F2937;
-    color: white;
+    background-color: map-get($map: $colors, $key:bg_color_secondary );
+    color: map-get($map: $colors, $key:primary );
     user-select: none;
+    box-shadow: 5px 0px 15px black;
     &__img{
         width: 40px;
     }
     &__button{
         width: 150px;
-        color: white;
-        background-color: #1F2937;
+        color: map-get($map: $colors, $key:primary );
+        background-color: map-get($map: $colors, $key:primary );
         border: 0px;
     }
     &__ico{
@@ -16,10 +17,10 @@
     }
     &__link{
         text-decoration: none;
-        color: white;
+        color: map-get($map: $colors, $key:primary );
         cursor: pointer;
         &:hover{
-            color: #cb0000;
+            color: map-get($map: $colors, $key:btn_hover );
         }
     }
 }

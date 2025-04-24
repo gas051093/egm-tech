@@ -1,31 +1,42 @@
 .sidebar{
-    background-color: #1F2937;
+    background-color: map-get($map: $colors, $key:bg_color );
     height: 100vh;
-    width: 180px;
     font-size: 0.8em;
+    border-radius: 0px 20px 0px 0px;
+    &__scroll{
+        overflow-y: auto;
+        max-height: 50vh;
+    }
+    &__logo{
+        width: 80px;
+    }
     &__item{
         all: unset;
-        width: 100%;
-        height: 30px; 
+        width: 100%; 
         text-align: start;
-        color: white;
-        background-color: #465a75;
+        color: map-get($map: $colors, $key:primary );
+        background-color: map-get($map: $colors, $key:greysub );
         &:hover{
             border-left: 5px solid green;
-            background-color: #272d35;
+            background-color: map-get($map: $colors, $key:btn_hover );
             transition: background-color 600ms, border-left 0ms;
         }
     }
     &__submenu{
         display: none;
+        color: black;
+        background-color: map-get($map: $colors, $key:bg_menu );
     }
     &__menu{
         all: unset;
         width: 100%;
         text-align: start;
-        color: white;
+        color: map-get($map: $colors, $key: primary );
     }
     &__ico{
         width: 30px;
+    }
+    &__foot{
+        color: map-get($map: $colors, $key: primary);
     }
 }
