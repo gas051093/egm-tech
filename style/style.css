@@ -44,6 +44,11 @@
   color: white;
   background-color: #465a75;
 }
+.sidebar__item:hover {
+  border-left: 5px solid green;
+  background-color: #272d35;
+  transition: background-color 600ms, border-left 0ms;
+}
 .sidebar__submenu {
   display: none;
 }

@@ -1,9 +1,16 @@
+function close_menu(){
+    conten_items = document.querySelectorAll(".sidebar__submenu")
+    conten_items.forEach (item=>{
+        item.style.display = "none"
+    })
+}
 const event_menu = (id_menu) => {
     const menu = document.getElementById(id_menu);
-    if (menu.style.display === "none" || menu.style.display === "") {
-        menu.style.display = "block";
-    } else {
+    if (menu.style.display === "block") {
         menu.style.display = "none";
+    } else {
+        close_menu();
+        menu.style.display = "block";
     }
 };
 
