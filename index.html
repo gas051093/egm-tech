@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./style/style.css">
+    <script defer src="./js/sidebar_event.js"></script>
     <script defer src="./js/act_fecha.js"></script>
     <title>Sistema EGM Tech - Panel Técnico</title>
 </head>
@@ -27,34 +28,30 @@
             </section>
         </header>
         <main class="row">
-            <nav class="sidebar col-2 p-0">
-                <div class="row m-0 mt-5 p-0">
-                    <ul class="sidebar__list row gap-2 p-0 m-0">
-                        <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/home.svg" class="sidebar__ico me-2" alt="">Dashboard</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/order.svg" class="sidebar__ico me-2" alt="">Odenes</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/cliente.svg" class="sidebar__ico me-2" alt="">Clientes</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/factura.svg" class="sidebar__ico me-2" alt="">Facturación</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/producto.svg" class="sidebar__ico me-2" alt="">Productos</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/caja.svg" class="sidebar__ico me-2" alt="">Caja</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/config.svg" class="sidebar__ico me-2" alt="">Configuración</a> 
-                        </li>
-                         <li class="sidebar__li align-content-center">
-                           <a class="text-decoration-none sidebar__link" href=""><img src="assets/ico/lock.svg" class="sidebar__ico me-2" alt="">Cerrar sesión</a> 
-                        </li>
-                    </ul>
+            <nav class="sidebar col-2 pt-5 p-0 m-0">
+                <div class="mt-4 m-0 p-0 ps-2 row gap-1">
+                    <button data-target="content_dashboard" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/home.svg" alt="">Dashboard</button>
+                    <button data-target="content_order" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/order.svg" alt="">Ordenes</button>
+                    <button data-target="content_client" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/cliente.svg" alt="">Clientes</button>
+                    <button data-target="content_billing" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/factura.svg" alt="">Facturación</button>
+                        <div id="content_billing" class="sidebar__submenu row justify-items-end m-0 ">
+                            <button class="sidebar__menu">Nueva factura</button>
+                            <button class="sidebar__menu">Nuevo presupuesto</button>
+                            <button class="sidebar__menu">Nota de credito</button>
+                            <button class="sidebar__menu">Comprobantes</button>
+                            <button class="sidebar__menu">Metodos de pago</button>
+                        </div>
+                    <button data-target="content_product" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/producto.svg" alt="">Productos</button>
+                        <div id="content_product" class="sidebar__submenu row justify-items-end m-0 ">
+                            <button class="sidebar__menu">Nueva factura</button>
+                            <button class="sidebar__menu">Nuevo presupuesto</button>
+                            <button class="sidebar__menu">Nota de credito</button>
+                            <button class="sidebar__menu">Comprobantes</button>
+                            <button class="sidebar__menu">Metodos de pago</button>
+                        </div>
+                    <button data-target="content_cash" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/caja.svg" alt="">Caja</button>
+                    <button data-target="content_config" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/config.svg" alt="">Configuración</button>
+                    <button data-target="content_lock" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/lock.svg" alt="">Cerrar sesión</button>
                 </div>
             </nav>
         </main>
@@ -74,3 +71,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+<div class="sidebar__submenu">
+    <button></button>
+</div>
