@@ -16,29 +16,29 @@
 <body>
     <div class="container-fluid bg_page">
         <header class="nav fixed-top row">
-            <section class="row justify-content-space-between align-items-center py-1 px-5 m-0">
-                <p id="nav_day" class="nav__day col-4 text-start m-0">[error]fecha automatizada por js</p>
+            <section class="row  align-items-center justify-content-center py-1 px-5 m-0">
+                <p id="nav_day" class="d-none d-md-block nav__day col-4 text-start m-0">[error]fecha automatizada por js</p>
                 <div class="col-4 text-center d-flex justify-content-center align-items-center m-0">
                     <img class="nav__img m-0 me-2" src="assets/img/logo_blanco.png" alt="logo empresa EGM">
-                    <p class="nav__title m-0">EGM TECH - Panel Técnico</p>
+                    <p class="nav__title m-0 d-none d-md-block">EGM TECH - Panel Técnico</p>
                 </div>
-                <div class="col-4 m-0 text-end">
+                <div class="col-4 m-0 text-end d-none d-md-block">
                     <a id="nav_link" class="nav__link"><img src="assets/ico/lock.svg" class="nav__ico me-2" alt="">Cerrar sesion</a>
                 </div>
             </section>
         </header>
         <main class="row">
             <nav class="row align-items-end">
-                <div class="row sidebar col-2 m-0 p-0 align-content-between">
+                <div class="row sidebar col-6 col-sm-3 col-lg-2 m-0 p-0 align-content-between">
                     <div class="row m-0 px-0 pt-5">
                         <div class="row justify-content-center m-0 pb-3 px-0">
                             <img class="sidebar__logo" src="assets/img/logo_blanco.png" alt="">
                         </div>
-                        <div class="sidebar__scroll row m-0 px-0 gap-1">
-                            <button data-target="content_dashboard" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/home.svg" alt="">Dashboard</button>
-                            <button data-target="content_order" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/order.svg" alt="">Ordenes</button>
-                            <button data-target="content_client" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/cliente.svg" alt="">Clientes</button>
-                            <button data-target="content_billing" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/factura.svg" alt="">Facturación</button>
+                        <div class="sidebar__scroll row m-0 px-0 gap-2">
+                            <button data-target="content_dashboard" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/home.svg" alt="">Dashboard</button>
+                            <button data-target="content_order" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/order.svg" alt="">Ordenes</button>
+                            <button data-target="content_client" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/cliente.svg" alt="">Clientes</button>
+                            <button data-target="content_billing" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/factura.svg" alt="">Facturación</button>
                                 <div id="content_billing" class="sidebar__submenu row justify-items-end m-0 ">
                                     <button class="sidebar__menu">Nueva factura</button>
                                     <button class="sidebar__menu">Nuevo presupuesto</button>
@@ -46,30 +46,30 @@
                                     <button class="sidebar__menu">Comprobantes</button>
                                     <button class="sidebar__menu">Metodos de pago</button>
                                 </div>
-                            <button data-target="content_product" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/producto.svg" alt="">Productos</button>
+                            <button data-target="content_product" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/producto.svg" alt="">Productos</button>
                                 <div id="content_product" class="sidebar__submenu row justify-items-end m-0 ">
                                     <button class="sidebar__menu">Cargar producto</button>
                                     <button class="sidebar__menu">Control de Stock</button>
                                     <button class="sidebar__menu">Categorías</button>
                                     <button class="sidebar__menu">Lista de Precios</button>
                                 </div>
-                            <button data-target="content_cash" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/caja.svg" alt="">Caja</button>
+                            <button data-target="content_cash" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/caja.svg" alt="">Caja</button>
                                 <div id="content_cash" class="sidebar__submenu row justify-items-end m-0 ">
                                     <button class="sidebar__menu">Ingresos y egresos</button>
                                     <button class="sidebar__menu">Cierre diario</button>
                                     <button class="sidebar__menu">Historial de cierres</button>
                                 </div>
-                            <button data-target="content_config" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/config.svg" alt="">Configuración</button>
+                            <button data-target="content_config" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/config.svg" alt="">Configuración</button>
                                 <div id="content_config" class="sidebar__submenu row justify-items-end m-0 ">
                                     <button class="sidebar__menu">Datos de la empresa</button>
                                     <button class="sidebar__menu">Usuarios</button>
                                     <button class="sidebar__menu">Preferencias del sistema</button>
                                     <button class="sidebar__menu">Seguridad</button>
                                 </div>
-                            <button data-target="content_lock" class="sidebar__item"><img class="sidebar__ico me-2" src="assets/ico/lock.svg" alt="">Cerrar sesión</button>
+                            <button data-target="content_lock" class="sidebar__item"><img class="sidebar__ico me-3" src="assets/ico/lock.svg" alt="">Cerrar sesión</button>
                         </div>
                     </div>
-                    <div class="row p-0 m-0 align-items-end sidebar__foot">
+                    <div class="row d-none d-sm-block p-0 m-0 align-items-end sidebar__foot">
                         <p class="text-center p-0 m-0">© 2025 Serviel Solutions <br> Desarrollado por Elio G. Magrassi · v1.0.0</p>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
     color: map-get($map: $colors, $key:primary );
     user-select: none;
     box-shadow: 5px 0px 15px black;
+    font-size: 0.8em;
     &__img{
         width: 40px;
     }

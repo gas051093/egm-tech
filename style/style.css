@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  font-size: 1em;
 }
 
 ::-webkit-scrollbar {
@@ -23,6 +24,7 @@
   color: #ffffff;
   user-select: none;
   box-shadow: 5px 0px 15px black;
+  font-size: 0.8em;
 }
 .nav__img {
   width: 40px;
@@ -42,14 +44,15 @@
   cursor: pointer;
 }
 .nav__link:hover {
-  color: #4b555f;
+  color: #00A7E1;
 }
 
 .sidebar {
-  background-color: #00171F;
+  background-color: #007EA7;
   height: 100vh;
   font-size: 0.8em;
   border-radius: 0px 20px 0px 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .sidebar__scroll {
   overflow-y: auto;
@@ -63,11 +66,11 @@
   width: 100%;
   text-align: start;
   color: #ffffff;
-  background-color: #2e2e2e;
+  padding-left: 15px;
 }
 .sidebar__item:hover {
   border-left: 5px solid green;
-  background-color: #4b555f;
+  background-color: #00A7E1;
   transition: background-color 600ms, border-left 0ms;
 }
 .sidebar__submenu {
