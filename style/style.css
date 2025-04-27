@@ -3,6 +3,7 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
   font-size: 1em;
+  outline: 1px solid red;
 }
 
 ::-webkit-scrollbar {
@@ -17,6 +18,10 @@
 
 .bg_page {
   background-color: #E4EDEB;
+}
+
+.main {
+  height: 100vh;
 }
 
 .nav {
@@ -53,10 +58,11 @@
   font-size: 0.8em;
   border-radius: 0px 20px 0px 0px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
 }
 .sidebar__scroll {
   overflow-y: auto;
-  max-height: 50vh;
+  max-height: 70vh;
 }
 .sidebar__logo {
   width: 80px;
@@ -72,6 +78,9 @@
   border-left: 5px solid green;
   background-color: #00A7E1;
   transition: background-color 600ms, border-left 0ms;
+}
+.sidebar__item--active {
+  background-color: #00A7E1;
 }
 .sidebar__submenu {
   display: none;
@@ -89,6 +98,15 @@
 }
 .sidebar__foot {
   color: #ffffff;
+}
+
+.dashboard {
+  max-height: 100vh;
+}
+.dashboard__container {
+  width: 150px;
+  height: 150px;
+  background-color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

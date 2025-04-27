@@ -3,7 +3,7 @@
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 1em;
-    // outline: 1px solid red;
+    outline: 1px solid red;
 }
 ::-webkit-scrollbar {
     width: 5px;
@@ -15,4 +15,7 @@
 }
 .bg_page{
     background-color: map-get($map: $colors, $key:secondary );
+}
+.main{
+    height: 100vh;
 }
