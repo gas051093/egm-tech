@@ -5,10 +5,7 @@
     border-radius: 0px 20px 0px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
-    &__scroll{
-        overflow-y: auto;
-        max-height: 70vh;
-    }
+    overflow-y:auto;
     &__logo{
         width: 80px;
     }

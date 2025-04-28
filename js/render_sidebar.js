@@ -62,6 +62,7 @@ const render_menu = ()=>{
             container.className = "sidebar__submenu row justify-items-end m-0";
                 for(const sub of menu.sub_menu){
                     let cont_sub = document.createElement("button");
+                    cont_sub.id = (`btn_${sub}`)
                     cont_sub.className = "sidebar__menu";
                     cont_sub.innerHTML = (`${sub}`)
                     container.appendChild(cont_sub);

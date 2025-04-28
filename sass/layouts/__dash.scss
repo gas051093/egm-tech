@@ -1,8 +1,29 @@
 .dashboard{
-    max-height: 100vh;
+    height: 100vh;
+    overflow-y: scroll;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    display: flex;
     &__container{
-        width: 150px;
-        height: 150px;
-        background-color: black;
+        height: 350px;
+    }
+    &__item{
+        background-color: map-get($map: $colors, $key: primary );
+        box-shadow: -2px 2px 2px map-get($map: $colors, $key:bg_menu );
+        border-radius: 25px;
+    }
+    &__btn{
+        all:unset;
+        background-color: orange;
+        border-radius: 20px;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        &:hover{
+            background-color: rgb(86, 56, 0);
+        }
+        &:active{
+            background-color: rgb(255, 174, 0);
+        }
     }
 }
