@@ -121,5 +121,8 @@
 .dashboard__btn:active {
   background-color: rgb(255, 174, 0);
 }
+.dashboard__table {
+  border: solid black;
+}
 
 /*# sourceMappingURL=style.css.map */
