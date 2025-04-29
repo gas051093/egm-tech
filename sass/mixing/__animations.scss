@@ -1,0 +1,21 @@
+@keyframes slide-right {
+    0% {
+        transform: translateX(-1000px);
+        opacity: 0;
+      }
+      70%{
+        opacity: 0;
+      }
+      100% {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+@mixin slide_screen($duration){
+    animation-name: slide-right;
+    animation-duration: $duration;
+    animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    animation-fill-mode: both;
+}
+
+  

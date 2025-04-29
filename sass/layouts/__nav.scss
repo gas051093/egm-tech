@@ -1,5 +1,6 @@
 .nav{
-    background-color: map-get($map: $colors, $key:bg_color_secondary );
+    // background-co:lor: map-get($map: $colors, $key:bg_color_secondary );
+    background-image: linear-gradient(to left,rgb(0, 0, 58),#00171F);
     color: map-get($map: $colors, $key:primary );
     user-select: none;
     box-shadow: 5px 0px 15px black;

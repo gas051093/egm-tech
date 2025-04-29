@@ -4,9 +4,12 @@ function close_menu(){
         item.style.display = "none"
     })
 }
-function close_display() { 
+function close_display(id_menu) { 
     const displays = document.querySelector(`[data-d="display"]`);
-    displays.style.display = "none";
+    const sub_menu = document.getElementById(id_menu)
+    if(!sub_menu){
+        displays.style.display = "none";
+    }
 }
 function disagree_item(){
     const items = document.querySelectorAll(".sidebar__item");
@@ -29,8 +32,8 @@ const item_active = (item_id) =>{
     const item_selec = document.getElementById(item_id);
     item_selec.classList.add ("sidebar__item--active");
 };
-const display_dash = (id_menu) => {
-    close_display();
+const display_dash = (id_menu, btn_sub) => {
+    close_display(btn_sub);
   const display = document.querySelector(`[data-target="${id_menu}"]`)
     display.style.display = "flex";
 };
@@ -43,7 +46,7 @@ function item_event(){
                 disagree_item();
                 item_active(btn_id);
                 event_menu(btn_target);
-                display_dash(btn_id);
+                display_dash(btn_id, btn_target);
         })
     })
 }

@@ -11,16 +11,29 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #003459;
+  background: transparent;
   border-radius: 4px;
 }
 
 .bg_page {
-  background-color: #E4EDEB;
+  background-color: #dfdfdf;
 }
 
+@keyframes slide-right {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 .nav {
-  background-color: #003459;
+  background-image: linear-gradient(to left, rgb(0, 0, 58), #00171F);
   color: #ffffff;
   user-select: none;
   box-shadow: 5px 0px 15px black;
@@ -98,6 +111,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
   display: flex;
+  animation-name: slide-right;
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation-fill-mode: both;
 }
 .dashboard__container {
   height: 350px;
@@ -119,7 +136,7 @@
   background-color: rgb(86, 56, 0);
 }
 .dashboard__btn:active {
-  background-color: rgb(255, 174, 0);
+  background-color: rgb(31, 23, 7);
 }
 .dashboard__table {
   border: solid black;

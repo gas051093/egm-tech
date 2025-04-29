@@ -10,7 +10,7 @@
     height: 0px;
   }
 ::-webkit-scrollbar-thumb {
-    background: map-get($map: $colors, $key:bg_color_secondary);
+    background: transparent;
     border-radius: 4px;
 }
 .bg_page{
